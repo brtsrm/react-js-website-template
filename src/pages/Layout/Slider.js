@@ -2,6 +2,7 @@ import React from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import {SliderImg} from "../../Images";
+import {Link} from "react-router-dom";
 
 export default function Slider() {
     return (
@@ -35,9 +36,9 @@ export default function Slider() {
                                         repellat modi impedit sequi.
                                     </p>
                                     <div className="btn-box">
-                                        <a href="" className="btn1">
+                                        <Link to={"/"} className="btn1">
                                             Read More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -65,9 +66,9 @@ export default function Slider() {
                                         repellat modi impedit sequi.
                                     </p>
                                     <div className="btn-box">
-                                        <a href="" className="btn1">
+                                        <Link to={"/"} className="btn1">
                                             Read More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -95,9 +96,9 @@ export default function Slider() {
                                         repellat modi impedit sequi.
                                     </p>
                                     <div className="btn-box">
-                                        <a href="" className="btn1">
+                                        <Link to={"/"} className="btn1">
                                             Read More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

@@ -29,29 +29,21 @@ export default function Team({
                     </div>
                     <div className="social_box">
                         {facebook && (
-                            <a href="#">
                                 <i className="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
                         )}
                         {twitter && (
-                            <a href="#">
                                 <i className="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
                         )}
                         {linkedin && (
-                            <a href="#">
+
                                 <i className="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
+
                         )}
                         {instagram && (
-                            <a href="#">
                                 <i className="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
                         )}
                         {youtube && (
-                            <a href="#">
                                 <i className="fa fa-youtube-play" aria-hidden="true"></i>
-                            </a>
                         )}
                     </div>
                 </div>

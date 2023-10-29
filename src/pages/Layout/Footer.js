@@ -1,7 +1,7 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
-function Footer(props) {
+function Footer() {
     return (
         <>
             <section className="info_section layout_padding2">
@@ -13,39 +13,39 @@ function Footer(props) {
                                     Address
                                 </h4>
                                 <div className="contact_link_box">
-                                    <a href="">
+                                    <Link to={"/"}>
                                         <i className="fa fa-map-marker" aria-hidden="true"></i>
                                         <span>
                   Location
                 </span>
-                                    </a>
-                                    <a href="">
+                                    </Link>
+                                    <Link to={"/"}>
                                         <i className="fa fa-phone" aria-hidden="true"></i>
                                         <span>
                   Call +01 1234567890
                 </span>
-                                    </a>
-                                    <a href="">
+                                    </Link>
+                                    <Link to={"/"}>
                                         <i className="fa fa-envelope" aria-hidden="true"></i>
                                         <span>
                   demo@gmail.com
                 </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="info_social">
-                                <a href="">
+                                <Link to={"/"}>
                                     <i className="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
+                                </Link>
+                                <Link to={"/"}>
                                     <i className="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
+                                </Link>
+                                <Link to={"/"}>
                                     <i className="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
+                                </Link>
+                                <Link to={"/"}>
                                     <i className="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3 info_col">
@@ -65,10 +65,13 @@ function Footer(props) {
                                     Links
                                 </h4>
                                 <div className="info_links">
-                                    <NavLink to={"/"} className={({isActive}) => isActive && "active" }>Home</NavLink>
-                                    <NavLink to={"/About"} className={({isActive}) => isActive && "active" }>About</NavLink>
-                                    <NavLink to={"/WhyUs"} className={({isActive}) => isActive && "active" }>Why Us</NavLink>
-                                    <NavLink to={"/Team"} className={({isActive}) => isActive && "active" }>Team</NavLink>
+                                    <NavLink to={"/"} className={({isActive}) => isActive && "active"}>Home</NavLink>
+                                    <NavLink to={"/About"}
+                                             className={({isActive}) => isActive && "active"}>About</NavLink>
+                                    <NavLink to={"/WhyUs"} className={({isActive}) => isActive && "active"}>Why
+                                        Us</NavLink>
+                                    <NavLink to={"/Team"}
+                                             className={({isActive}) => isActive && "active"}>Team</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -87,11 +90,11 @@ function Footer(props) {
                 </div>
             </section>
 
-            <section class="footer_section">
-                <div class="container">
+            <section className="footer_section">
+                <div className="container">
                     <p>
                         &copy; <span id="displayYear"></span> All Rights Reserved By
-                        <a href="https://html.design/">Free Html Templates</a>
+                        <Link to="https://html.design/">Free Html Templates</Link>
                     </p>
                 </div>
             </section>

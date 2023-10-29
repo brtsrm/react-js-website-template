@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect} from 'react';
+import React, {useEffect} from 'react';
 import {HeroBg} from "../../Images";
 
 import 'swiper/css';
@@ -46,17 +46,17 @@ function Header() {
 
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav">
-                                    <li className={(location.pathname == "/" ? "nav-item active" : "nav-item")}>
+                                    <li className={(location.pathname === "/" ? "nav-item active" : "nav-item")}>
                                         <NavLink to={"/"} className="nav-link">
                                             Home
                                         </NavLink>
                                     </li>
-                                    <li className={(location.pathname == "/About" ? "nav-item active" : "nav-item")}>
+                                    <li className={(location.pathname === "/About" ? "nav-item active" : "nav-item")}>
                                         <NavLink to={"/About"} className="nav-link">
                                             About
                                         </NavLink>
                                     </li>
-                                    <li className={(location.pathname == "/Service" ? "nav-item active" : "nav-item")}>
+                                    <li className={(location.pathname === "/Service" ? "nav-item active" : "nav-item")}>
                                         <NavLink to={"/Service"} className="nav-link">
                                             Service
                                         </NavLink>
