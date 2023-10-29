@@ -1,3 +1,9 @@
+# Proje
+
+A theme from free-css.com. I converted it to react written in html css. Owlcarousel was used instead of swiper.
+
+Url Address : [https://www.free-css.com/free-css-templates/page296/finexo](https://www.free-css.com/free-css-templates/page296/finexo)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
